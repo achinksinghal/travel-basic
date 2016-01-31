@@ -1,0 +1,11 @@
+<div class="list-group">
+	<a href="#" class="list-group-item active">
+		  <h4 class="list-group-item-heading">Attractions in {{city_name}}</h4>
+	</a>
+	{{#each poi.items}}
+	<a href="#" class="list-group-item">
+		  <h4 class="list-group-item-heading">{{title}}</h4><span class="badge">{{averageRating}}*</span>
+		  <p class="list-group-item-text">{{openingHours.text}}</p>
+	</a>
+	{{/each}}	
+</div>

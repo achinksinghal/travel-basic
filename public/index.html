@@ -1,0 +1,119 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+        <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+            }
+        </style>
+    </head>
+    <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Travel Native</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Hello, world! Let's Travel!</h1>
+        <p>Use Travel Native to help plan your itenerary for an upcoming trip abroad!</p>
+        
+
+        <div class="panel panel-default">
+  
+		    <div style="margin: 15px">
+		     
+		    	<form class="form-horizontal">
+				  <div class="form-group">
+            <div class="col-md-2">
+              
+              <label for="destination">Destination</label>
+            </div>
+            <div class="col-md-4">
+              
+              <input type="text" name="trip[destination]" id="destination"> 
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-md-2">
+			        <label for="travel_method">Travel Method</label>
+              
+            </div>
+            <div class="col-md-4">
+              
+			        <select id="travel_method" name="trip[travel_method]" >
+			        	<option value="scotland" selected>Drive</option>
+                <option value="colombia">Walk/Hike</option>
+			        	<option value="colombia">Public Transportation</option>
+			        </select>  	
+              
+            </div>
+			    </div>
+			    
+			    <div class="form-group">
+            <div class="col-md-2">
+              
+            <label for="date">Date</label>
+              
+            </div>
+            <div class="col-md-4">
+              
+            <input type="date" id="date" name="trip[date]">
+              
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-md-2">
+			    	<label for="duration">Duration</label>
+              
+            </div>
+            <div class="col-md-4">
+			    	<input type="number" id="duration" name="trip[duration]" placehodel="days">
+              
+            </div>
+			    </div>
+			    <div>
+			    	<span class="btn btn-primary btn-lg" id="beginProcessButton" role="button">Get Started!</span>	
+			    </div>
+			</form>
+		    </div>
+		    
+		</div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <hr>
+      <footer>
+        <p>&copy; Travel Native 2015</p>
+      </footer>
+    </div> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

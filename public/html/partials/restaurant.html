@@ -1,0 +1,11 @@
+<div class="list-group">
+	<a href="#" class="list-group-item active">
+		  <h4 class="list-group-item-heading">Restaurants in {{city_name}}</h4>
+	</a>
+	{{#each restaurants}}
+	<a href="#" class="list-group-item">
+		  <h4 class="list-group-item-heading">{{name}}</h4><span class="badge">{{rating}}*</span>
+		  <p class="list-group-item-text">{{address}}</p>
+	</a>
+	{{/each}}	
+</div>

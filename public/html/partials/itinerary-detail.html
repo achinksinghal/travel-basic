@@ -1,0 +1,17 @@
+<ul class="list-group">
+  <li class="list-group-item active">Your Dates</li>
+  {{#each dates}}
+	  <li class="list-group-item">
+	  	<span contenteditable=true id="city_{{@index}}">{{city_name}}</span>
+	    <div>{{date_format}}</div>
+	    <div>
+	        <span class="label label-success" style="cursor:pointer" onclick="listHotel('{{@index}}')">Hotels</span>
+	        <span class="label label-warning" style="cursor:pointer" onClick="listRestaurant('{{@index}}')">Restaurants</span>
+	        <span class="label label-info" style="cursor:pointer" onClick="listPoi('{{@index}}')">Events</span>    
+	    </div>
+	    <div><span>Your Hotel:</span><span>Please Select</span></div>
+	    <div><span>Dining:</span><span>Please Select</span></div>
+	    <div><span>Point of interest:</span><span>Please Select</span></div>
+		</li>
+	{{/each}}
+</ul>

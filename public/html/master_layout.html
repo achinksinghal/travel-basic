@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title>Trip planner</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+		function navigateToMainSection(section){
+			console.log("Navigating to main section: "+ section);
+
+			if( section=="home" ){
+				changeMainPageLocation("planner_main");
+			}
+			else if( section=="budget" ){
+				changeMainPageLocation("budget-main");
+			}
+			else if( section=="todo" ){
+				changeMainPageLocation("todo-main");
+			}
+			else if( section=="profile" ){
+				changeMainPageLocation("profile-main");
+			}
+			else if( section=="itinerary" ){
+				changeMainPageLocation("itinerary-main");
+			}
+		}
+
+		function changeMainPageLocation(location){
+			document.getElementById('right-nav').src = "/html/"+ location +".html";
+		}
+	</script>
+</head>
+	<frameset cols="10%,*" frameborder="0">
+	  <frame src="/html/left_master_nav.html" id="left-nav">
+	  <frame src="/html/itinerary-main.html" id="right-nav">
+	</frameset>
+</html>
